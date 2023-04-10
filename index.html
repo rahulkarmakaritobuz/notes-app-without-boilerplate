@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Notes</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,35 +12,50 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./asstes/css/style.css" />
+    <title>My Notes</title>
   </head>
   <body>
+    <div class="app-name">Notes app</div>
     <div class="popup-box">
       <div class="popup">
         <div class="popup-content">
           <header>
             <p>Add new notes</p>
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <span class="close">Close</span>
+            <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
           </header>
           <form action="#">
             <div class="title">
-              <label>Title</label>
-              <input type="text" spellcheck="false" />
+              <input type="text" spellcheck="false" placeholder="Title" />
             </div>
             <div class="description">
-              <label>Description</label>
-              <textarea></textarea>
+              <textarea placeholder="Take a note..."></textarea>
             </div>
-            <button class="add">Add Note</button>
+
+            <div class="button-container">
+              <button class="add"></button>
+            </div>
           </form>
         </div>
       </div>
     </div>
+    <div class="popup-background"></div>
     <div class="wrapper">
       <li class="add-box">
         <div class="icon"><i class="fa-solid fa-plus"></i></div>
         <p>Add new note</p>
       </li>
     </div>
+    <div class="delete-warning">
+      <p class="heading">Warning!</p>
+      <p class="warning-message">Are you sure you want to delete this note?</p>
+      <div class="confirm-button">
+        <button class="no" value="false">No</button>
+        <button class="yes" value="true">Yes</button>
+      </div>
+    </div>
+    <div class="popup-background"></div>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
